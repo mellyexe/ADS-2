@@ -10,9 +10,8 @@ double pown(double value, uint16_t n) {
     if ((n & 1) == 0) {
       double result = pown(value, n >> 1);
       return result * result;
-    }
-    else 
-      return value * pown(value, n - 1);
+    } else
+        return value * pown(value, n - 1);
 }
 
 uint64_t fact(uint16_t n) {
